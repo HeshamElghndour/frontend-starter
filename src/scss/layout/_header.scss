@@ -1,0 +1,46 @@
+header {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-gap: $grid-gutter;
+  padding: $header-padding;
+
+  &::before {
+    content: '';
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    background: url(../images/bg-triangle.svg) no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  p {
+    letter-spacing: 0.8px;
+  }
+
+  video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 52px;
+    left: 52px;
+  }
+
+  .border-gradient {
+    position: relative;    
+    width: 604px;
+    @include flex-box(column, center);
+  }
+
+  .video-text{
+    @include flex-box(column, center);
+  }
+
+}

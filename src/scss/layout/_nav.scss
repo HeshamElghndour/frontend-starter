@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: $nav-padding;
+
+    .nav-list-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-search {
+
+        input[type="text"] {
+            font-family: 'DINWebPro-light', sans-serif;
+            width: 150px;
+            background: transparent;
+            color: wd-color('white');
+            @include type-setting(1);
+            border: none;
+            border-bottom: 1px solid #fff;
+            margin: 0px 0 0 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .btn-logo {
+        padding-left: 12px;
+        margin-left: 12px;
+        border: none;
+        border-left: 1px solid wd-color('white');
+        background: transparent;
+    }
+}
